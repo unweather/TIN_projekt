@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Give a tip</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Inria+Serif:400,700&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7ddcbdd4a1.js"
+    crossorigin="anonymous"></script>
+  <script src="data.js"></script>
+
+</head>
+
+<body onload="loadData()">
+  <div id="container">
+    <div id="logo">Give a tip!</div>
+    <div id="menu">
+      <ul>
+        <li><a href="./">Strona główna</a></li>
+        <li><a href="./kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div>
+        <table id="myTable">
+          <tr>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Tips</th>
+            <th>Delete</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="text" name="add_firstName" id="add_firstName"
+                placeholder="First name.."></td>
+            <td><input type="text" name="add_secondName" id="add_secondName"
+                placeholder="Second name.."></td>
+            <td><input type="number" name="add_tips" id="add_tips"
+                placeholder="Total tip.."></td>
+            <td><i class="fas fa-plus" onclick="addData()"></i></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="selectedUser" class="ma">Wybrałeś: </div>
+
+      <div id="tips">
+        <div class="ta">
+          <div class="tip" onclick="tip(2)">+2zł</div>
+          <div class="tip" onclick="tip(5)">+5zł</div>
+          <div class="tip" onclick="tip(10)">+10zł</div>
+          <div class="tip" onclick="tip(50)">+50zł</div>
+        </div>
+        <div id="total"> SUMA: 0zł</div>
+        <div id="reset" onclick="resetTotal()"><i class="fas fa-redo"></i></div>
+        <div id="submit"><button type="button" onclick="submitTip()">Przekaż
+            napiwek</button></div>
+      </div>
+    </div>
+    <div id="footer">Made by Mateusz Niepogoda</div>
+  </div>
+</body>
+
+</html>

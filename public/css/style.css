@@ -1,0 +1,157 @@
+#container
+{
+  width: 100vw;
+  height: 100vh;
+	margin-left: auto;
+  margin-right: auto;
+  background-color: #1e1f26;
+  font-family: 'Inria Serif', serif;
+  color: azure;
+}
+#logo
+{
+  color: azure;
+  font-size: 6vh;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 3vh;
+  text-align: center;
+}
+#footer
+{
+  color: azure;
+  font-size: 2vh;
+  letter-spacing: 2px;
+  padding: 1vh;
+  text-align: center;
+  border-top: black solid 2px;
+}
+#menu
+{
+  text-align: center;
+}
+#menu li
+{
+  display: inline;
+}
+#menu li a
+{
+  margin: 0 20px;
+}
+a
+{
+  text-decoration: none;
+  color: azure;
+}
+a:hover
+{
+  color: #777;
+}
+#content
+{
+  height: 730px;
+  width: 80vw;
+  margin: 20px auto;
+  text-align: center;
+}
+#content table {
+  margin: 0 auto;
+}
+#myTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #111;
+  padding: 8px;
+}
+
+#myTable tr{background-color: #4d648d;}
+
+#myTable tr:hover {background-color: #5775aa;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #283655;
+  color: azure;
+}
+#myTable tr td:nth-child(1), #myTable th:nth-child(1) {
+  display: none;
+}
+
+i:hover {
+  color: #839292;
+  cursor: pointer;
+}
+#tips {
+  width: 100%;
+  text-align: center;
+}
+.tip {
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px;
+  margin: 50px;
+  border: #5775aa solid 2px;
+  border-radius: 3px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #1e1f26;
+  color: azure;
+}
+.tip:hover {
+  background-color: azure;
+  color: #000;
+}
+#total {
+  display: inline-block;
+  font-size: 30px;
+  padding: 20px;
+  border: #5775aa solid 2px;
+  border-radius: 3px;
+}
+#submit button {
+  font-family: 'Inria Serif', serif;
+  display: inline-block;
+  font-size: 21px;
+  padding: 10px;
+  margin-top: 5px;
+  border: #5775aa solid 2px;
+  border-radius: 3px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #1e1f26;
+  color: azure;
+}
+#submit button:hover {
+  background-color: azure; /* Green */
+  color: #000;
+}
+#reset {
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+.select:hover {
+  cursor: pointer;
+}
+#selectedUser {
+  padding: 20px;
+  font-size: 30px;
+}
+.cb {
+  clear: both;
+}
+.ma {
+  margin: 0 auto;
+}
+
+.ta {
+  text-align: center;
+}
